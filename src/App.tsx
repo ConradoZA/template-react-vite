@@ -1,10 +1,10 @@
 import './App.scss';
 
-import { FC, useState } from 'react';
+import { FC, ReactElement, useState } from 'react';
 
 import logo from './logo.svg';
 
-const App: FC = () => {
+const App: FC<{}> = (): ReactElement => {
   const [count, setCount] = useState(0);
 
   return (
